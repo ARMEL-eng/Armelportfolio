@@ -1,0 +1,90 @@
+.projects-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  font-family: Arial, sans-serif;
+  background-color: #fffffa;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #483d8b;
+}
+
+.project-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.project-block img{
+  width: 20%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-video {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-text {
+  width: 40%;
+  padding: 10px;
+  background-color: #f7fbfe;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  color: #333;
+}
+
+.project-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.project-text p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Ajout pour l'alternance texte/image */
+.project-block:nth-child(odd) .project-text {
+  order: 1;
+}
+
+.project-block:nth-child(odd) img,
+.project-block:nth-child(odd) .project-video {
+  order: 2;
+}
+
+.project-block:nth-child(even) .project-text {
+  order: 2;
+}
+
+.project-block:nth-child(even) img,
+.project-block:nth-child(even) .project-video {
+  order: 1;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .project-block {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-text,
+  .project-block img,
+  .project-block .project-video {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}

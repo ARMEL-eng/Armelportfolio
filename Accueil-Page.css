@@ -1,0 +1,570 @@
+
+
+
+.hero-content h1 {
+  font-size: 5rem;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'Baloo Paaji', cursive;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+  font-family: 'Baloo Paaji', cursive;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+.cta-button {
+  background-color: #6a5acd;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #483d8b;
+  }
+
+
+/* About Section */
+.about-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: 'Baloo Paaji', cursive;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333;
+  font-family: 'Baloo Paaji', cursive;
+
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Empêche le scroll horizontal */
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%; /* S'assurer que le header prend toute la largeur */
+  box-sizing: border-box;
+
+}
+header {
+  height: 100vh; /* Hauteur totale de l'écran */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1200px; /* Limiter la largeur principale */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-wrap: wrap; /* Les liens passeront à la ligne si nécessaire */
+    gap: 10px;
+  }
+}
+
+.navbar.scrolled {
+  background-color: #fcfcfc; /* Gris clair pour la navbar */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo.scrolled {
+  color: #6a5acd; /* Violet pour "Mon Portfolio Vue.js" */
+}
+
+.navbar.scrolled .nav-links li a {
+  color: black; /* Noir pour les liens après scroll */
+}
+
+.navbar.scrolled .nav-links li a:hover {
+  color: #6a5acd; /* Violet au survol */
+}
+
+/* Section À propos */
+.about-section {
+    display: flex; /* Permet de mettre l'image et le texte côte à côte */
+    align-items: center; /* Aligne verticalement au centre */
+    justify-content: center; /* Centrer horizontalement */
+    padding: 50px 20px;
+    gap: 20px; /* Espace entre l'image et le texte */
+  }
+  
+  .about-container {
+    display: flex; /* Agencement horizontal */
+    align-items: center;
+    max-width: 1200px; /* Limite la largeur */
+    margin: auto; /* Centre la section */
+  }
+  
+  .about-image {
+    flex: 1; /* Prend 1 part de l'espace */
+    text-align: center;
+  }
+  
+  .about-image img {
+    max-width: 100%; /* L'image prend toute la largeur disponible */
+    height: auto; /* Conserve le ratio */
+    border-radius: 10px; /* Ajoute un léger arrondi aux coins */
+  }
+  
+  .about-text {
+    flex: 1; /* Prend 1 part de l'espace */
+    text-align: left; /* Aligne le texte à gauche */
+    font-family: 'Baloo Paaji', cursive;
+  }
+  
+  .about-text h3 {
+    color: #6a5acd; /* Couleur violette */
+    font-size: 1.2rem;
+    margin-bottom: 5px; /* Réduit l'espacement en dessous de "Who Am I?" */
+  }
+  
+  .about-text h2 {
+    color: #483d8b; /* Couleur plus foncée */
+    font-size: 2rem;
+    margin-top: 0; /* Supprime l'espacement au-dessus de "About Me" */
+    margin-bottom: 20px;
+  }
+  
+  .about-text p {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+
+/* Compétences Section */
+.skills-section {
+    color: #ffffff; /* Texte blanc */
+    padding: 50px 20px; /* Marges autour */
+    text-align: center;
+}
+  
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espacement entre les cartes */
+    flex-wrap: wrap; /* Permet d'ajuster pour les petits écrans */
+}
+  
+.skill-card {
+    background-color: #6a5acd; /* Fond des cartes */
+    border-radius: 20px; /* Ajout du border-radius pour correspondre */
+    border: 5px solid #e6e6e6; /* Ajout d'une bordure */
+    padding: 20px;
+    max-width: 300px; /* Largeur maximale d'une carte */
+    box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2); /* Ombre selon vos spécifications */
+    text-align: center;
+    transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg) scale(0.9, 0.9); /* Ajout des transformations initiales */
+    transition: 0.4s ease-in-out transform; /* Transition pour des effets fluides */
+}
+  
+.skill-card:hover {
+    transform: translate3d(0px, 0px, -250px); /* Transformation au survol */
+}
+  
+.skill-icon {
+    font-size: 40px; /* Taille des icônes */
+    margin-bottom: 15px; /* Espacement sous l'icône */
+    color: #ffffff; /* Couleur des icônes */
+    transition: color 0.3s ease; /* Transition douce pour la couleur */
+}
+
+.skill-icon:hover {
+    color: #ffc107; /* Change la couleur de l'icône au survol */
+}
+
+.skill-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.skill-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #cccccc; /* Texte légèrement plus clair */
+}
+ img.icon-image {
+    width: 70px; /* Taille ajustable */
+    height: auto;
+    display: block; /* Rend l'image en mode bloc pour centrer */
+    margin: 10 auto; /* Centre horizontalement */
+    margin-bottom: 50px; /* Espacement sous l'image */
+}
+
+  /* Section des compétences */
+.competences-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    color: #ffffff;
+  }
+  
+  /* Conteneur principal */
+  .competences-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px; /* Espacement entre les sections */
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Section des jauges */
+  .skills {
+    flex: 2; /* Prend deux fois plus d'espace */
+  }
+  
+  .skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Espacement entre les compétences */
+  }
+  
+  .skill-icon {
+    width: 60px; /* Taille des icônes */
+    height: 60px;
+    margin-right: 15px; /* Espacement entre l'icône et la jauge */
+  }
+  
+  .progress-bar {
+    margin-left: 15px; /* Espace entre l'icône et la jauge */
+    width: 100%;
+    height: 10px;
+    background-color: #333; /* Couleur de fond de la barre */
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background-color: #6a5acd; /* Couleur de la progression */
+    border-radius: 5px;
+}
+  
+  /* Section de la photo */
+  .photo-section {
+    flex: 1; /* Prend moins d'espace */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .photo {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Ombre autour de la photo */
+  }
+  .competences-section {
+    margin-top: 10px; /* Ajustez cette valeur pour rapprocher le titre */
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin: 0px 0; /* Réduit ou augmente l'espace au-dessus et en dessous du titre */
+    color: #6a5acd;
+    font-family: 'Baloo Paaji', cursive;
+  }
+  
+  .competences-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px; /* Ajuste l'espacement général */
+  }
+  
+  .competences-section {
+    margin-top: 50px; /* Ajustez pour l'espacement général de la section */
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 100px; /* Ajustez pour réduire ou augmenter l'espace sous le titre */
+    color: #6a5acd;
+    font-family: 'Baloo Paaji', cursive;
+  }
+  
+  .competences-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-; /* Aligner les éléments en haut */
+  }
+  
+  .skills {
+  
+    padding-right: 100px; /* Espacement avec l'image */
+  }
+  
+  .photo-section {
+    flex: 1; /* S'assure que l'image occupe une partie égale */
+    display: flex;
+    justify-content: right;
+    align-items: right;
+  }
+  
+  .photo {
+    max-width: 500px; /* Taille de l'image */
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-title {
+    position: relative; /* Pour pouvoir ajuster précisément la position */
+    top: -50px; /* Ajuste verticalement selon tes besoins */
+    text-align: center; /* Centre le titre horizontalement */
+    font-size: 2.5rem; /* Taille du texte */
+    margin-bottom: 20px; /* Ajoute un espace en dessous */
+    color: #6a5acd; /* Couleur violette pour correspondre au thème */
+    font-family: 'Baloo Paaji', cursive; /* Police stylée */
+  }
+  
+  .skill-icon  {
+    width: 50px; /* Taille uniforme pour toutes les icônes */
+    height: 50px; /* Taille uniforme pour toutes les icônes */
+    object-fit: contain; /* Assure que les proportions restent correctes */
+    display: block; /* Centre l'image dans son conteneur */
+    margin: 0 auto; /* Centre horizontalement */
+}
+
+
+.skills {
+  margin-left: 50px; /* Décale les jauges vers la droite */
+}
+
+.photo-section {
+  margin-top: -40px; /* Monte la photo pour la rapprocher du titre */
+  display: flex;
+  justify-content: center; /* Centre la photo horizontalement */
+}
+
+.photo {
+  width: 200px; /* Ajustez la taille si nécessaire */
+  height: auto;
+  border-radius: 50%; /* Pour un effet circulaire */
+}
+.photo-section {
+    display: flex;
+    justify-content: right;
+    
+  }
+  
+  .photo {
+    width: 300px; /* Augmentez cette valeur pour agrandir */
+    height: auto; /* Maintient les proportions */
+    border-radius: 50%; /* Assure qu'elle reste circulaire */
+  }
+  
+  .icon-container {
+    display: flex; /* Activer flexbox */
+    flex-direction: column; /* Empile logo et texte verticalement */
+    align-items: center; /* Centre horizontalement logo et texte */
+  }
+  
+  .skill-icon {
+    display: block; /* Assure que le logo est traité comme un bloc */
+    margin: 0 auto; /* Centre le logo horizontalement si besoin */
+    width: 50px; /* Taille du logo */
+    height: auto; /* Conserve les proportions */
+  }
+  
+  .skill-name {
+    margin-top: 5px; /* Ajoute un espace entre le logo et le texte */
+    font-size: 12px; /* Taille de la police */
+    color: #333; /* Couleur du texte */
+    text-align: center; /* Centre le texte */
+  }
+  
+  .icon-container {
+    display: flex; /* Active flexbox */
+    flex-direction: column; /* Organise les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+    text-align: center; /* Centre le texte */
+    margin-bottom: 20px; /* Ajoute de l'espace sous chaque bloc logo + nom */
+  }
+  
+  .skill-icon {
+    display: block; /* Force le logo à être traité comme un bloc */
+    margin: 0 auto; /* Centre horizontalement le logo */
+    width: 60px; /* Taille uniforme des logos */
+    height: auto; /* Conserve les proportions */
+  }
+  
+  .skill-name {
+    margin-top: 10px; /* Ajoute de l'espace entre le logo et le nom */
+    font-size: 14px; /* Taille du texte sous les logos */
+    color: #333; /* Couleur des noms */
+  }
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap; /* Permet de passer à une nouvelle ligne après 3 projets */
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 20px; /* Espace uniforme entre les projets */
+    max-width: 1000px; /* Limite la largeur totale des projets */
+    margin: 0 auto; /* Centre le conteneur */
+  }
+  
+  .project-card {
+    position: relative;
+    flex: 0 0 calc(33.33% - 20px); /* 3 projets par ligne */
+    max-width: 300px; /* Largeur maximale pour chaque projet */
+    height: 200px; /* Hauteur fixe pour les cartes */
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #f5f5f5; /* Couleur de fond grise par défaut */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.75) rotateY(-30deg) rotateX(45deg) translateZ(4.5rem); /* Transformations 3D */
+    transform-origin: 50% 100%;
+    transform-style: preserve-3d;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.25);
+    transition: 0.6s ease transform;
+  }
+  
+  .project-card:hover {
+    transform: scale(1) rotateY(0deg) rotateX(0deg) translateZ(0); /* Animation 3D au survol */
+  }
+  
+  .project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1); /* Effet avant léger */
+    transform: translateZ(4rem);
+    transition: transform 0.6s ease;
+  }
+  
+  .project-card:hover::before {
+    transform: translateZ(0); /* Réduction de la profondeur */
+  }
+  
+  .project-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1); /* Effet arrière léger */
+    transform: translateZ(-4rem);
+    transition: transform 0.6s ease;
+  }
+  
+  .project-card:hover::after {
+    transform: translateZ(-1px); /* Réduction de la profondeur */
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover .project-image {
+    transform: scale(1.1); /* Zoom au survol */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent noir */
+    color: #fff; /* Texte en blanc */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Caché par défaut */
+    transition: opacity 0.3s ease;
+  }
+  
+  .project-card:hover .overlay {
+    opacity: 1; /* Affiche l'overlay au survol */
+  }
+  
+  .overlay h3 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .overlay p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .more-link {
+    margin-top: 30px; /* Ajoute de l'espace sous les projets */
+  }
+  
+  .learn-more {
+    font-size: 1.2rem;
+    color: #151515; /* Couleur du texte */
+    border-radius: 40px; /* Coins arrondis */
+    border: 2px solid #483d8b; /* Bordure bleue foncée */
+    background-color: #f6f2f0; /* Fond orange */
+    padding: 10px 20px; /* Espacement intérieur */
+    text-decoration: none; /* Supprime le soulignement */
+    text-align: center; /* Centre le texte */
+    display: inline-block; /* S'assure que le bouton reste un bloc */
+    transition: all 0.3s ease; /* Transition fluide */
+  }
+  
+  .learn-more:hover {
+    background-color: #6a5acd; /* Fond transparent au survol */
+    color: #f8f8fa; /* Texte violet au survol */
+    border-color: #6a5acd; /* Bordure violette au survol */
+    box-shadow: 0 0 10px rgba(106, 90, 205, 0.5); /* Effet lumineux au survol */
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-top: 50px; /* Espacement supérieur */
+    margin-bottom: 30px; /* Espacement inférieur ajusté */
+    color: #390bf0; /* Couleur violette */
+    text-align: center;
+  }
+  
